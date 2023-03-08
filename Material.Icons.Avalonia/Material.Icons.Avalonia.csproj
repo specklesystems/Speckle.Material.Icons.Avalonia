@@ -1,29 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>9</LangVersion>
-        <Nullable>enable</Nullable>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>Material.Icons.Avalonia</Title>
-        <Authors>SKProCH</Authors>
-        <Description>Avalonia control for display material icons from Material.Icons</Description>
-        <PackageProjectUrl>https://github.com/AvaloniaUtils/Material.Icons.Avalonia/</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/AvaloniaUtils/Material.Icons.Avalonia/blob/master/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/AvaloniaUtils/Material.Icons.Avalonia.git</RepositoryUrl>
-        <RepositoryType>Git</RepositoryType>
-        <PackageTags>material icons material-design google-material avalonia</PackageTags>
-        <PackageVersion>1.2.0</PackageVersion>
-    </PropertyGroup>
-    <ItemGroup>
-        <Compile Update="**\*.xaml.cs">
-            <DependentUpon>%(Filename)</DependentUpon>
-        </Compile>
-        <AvaloniaResource Include="**\*.xaml">
-            <SubType>Designer</SubType>
-        </AvaloniaResource>
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.0-preview1" />
-        <PackageReference Include="Material.Icons" Version="1.1.10" />
-    </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Speckle.Material.Icons.Avalonia</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+    <Authors>SKProCH, Speckle</Authors>
+    <Description>Avalonia control for display material icons from Material.Icons</Description>
+    <PackageProjectUrl>https://github.com/specklesystems/Speckle.Material.Icons.Avalonia</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/specklesystems/Speckle.Material.Icons.Avalonia/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/specklesystems/Speckle.Material.Icons.Avalonia.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>material icons material-design google-material avalonia</PackageTags>
+    <PackageVersion>1.2.0</PackageVersion>
+    <PackageId>Speckle.Material.Icons.Avalonia</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+      <Compile Update="**\*.xaml.cs">
+          <DependentUpon>%(Filename)</DependentUpon>
+      </Compile>
+      <AvaloniaResource Include="**\*.xaml">
+          <SubType>Designer</SubType>
+      </AvaloniaResource>
+  </ItemGroup>
+  <ItemGroup>
+      <PackageReference Include="Avalonia" Version="0.10.18" />
+      <PackageReference Include="Material.Icons" Version="1.1.35" />
+  </ItemGroup>  
 </Project>
